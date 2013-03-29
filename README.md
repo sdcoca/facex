@@ -4,7 +4,7 @@ facex
 Geometrical Face Features Extraction
 
 
-This software is the result of the first approachan effort to develop a geometrical 
+This software is the result of the first approach effort to develop a geometrical 
 facial features extraction algorithm. It was developed in Sao Paulo University (Brazil), 
 and in cooperation with Universidad Politecnica de Madrid (Spain) and Carnegie Mellon 
 University (USA). It covers mouth, eyes, eyebrows, nosetrils, and face tilt estimation.
@@ -50,7 +50,7 @@ Please, note that this code was a research effort without commercial purposes so
 
   - Feel free to contact to share ideas or contribute!.
   
-This software uses the wel known and brilliant OpenCV library for image processing 
+This software uses the well known and brilliant OpenCV library for image processing 
 algorithms and you will need it to be able to build it: http://opencv.org/
 
 You can find a description of the algortihm in the paper cited below. Please quote the
