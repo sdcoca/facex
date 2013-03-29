@@ -17,6 +17,10 @@ It provides a very simple interface based on a single C/C++ class named "Face" t
 will compute the location of the mentioned points of geomatrical interest of the face 
 the provided image. See "face.h".
 
+If you take a look at the screeshot images in the source directory you may notice 
+how robust it is against typical sources of occlusion such as hair, glasses and 
+forehead wrinkles. 
+
 Performance was totally prioriticed over precission. The extraction algorithm takes 
 from 300usec to 1.5 ms on a desktop PC. It still has to be cleaned up from some 
 unnecessary operations but shows promising results. 
