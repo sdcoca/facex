@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Facex : Geometrical Face Features Extraction" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Facex</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/sdcoca/facex">View on GitHub</a>
+
+          <h1 id="project_title">Facex</h1>
+          <h2 id="project_tagline">Geometrical Face Features Extraction</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/sdcoca/facex/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/sdcoca/facex/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>facex</h1>
+
+<p>Geometrical Face Features Extraction</p>
+
+<p>This software is the result of the first approach effort to develop a geometrical 
+facial features extraction algorithm. It was developed in Sao Paulo University (Brazil), 
+and in cooperation with Universidad Politecnica de Madrid (Spain) and Carnegie Mellon 
+University (USA). It covers mouth, eyes, eyebrows, nosetrils, and face tilt estimation.</p>
+
+<p>Watch a demo here: <a href="http://www.youtube.com/watch?v=2wYHoMu7kXo">http://www.youtube.com/watch?v=2wYHoMu7kXo</a></p>
+
+<pre><code>(make it full quality and full screen or you will not see the details)
+</code></pre>
+
+<p>It provides a very simple interface based on a single C/C++ class named "Face" that 
+will compute the location of the mentioned points of geomatrical interest of the face 
+the provided image. See "face.h".</p>
+
+<p>If you take a look at the screeshot images in the source directory you may notice 
+how robust it is against typical sources of occlusion such as hair, glasses and 
+forehead wrinkles.</p>
+
+<p><img src="https://raw.github.com/sdcoca/facex/master/ImageSetUp_OR.png" alt="Screenshot"></p>
+
+<p>Performance was totally prioriticed over precission. The extraction algorithm takes 
+from 300usec to 1.5 ms on a desktop PC. It still has to be cleaned up from some 
+unnecessary operations but shows promising results. </p>
+
+<p>Additionaly, the lack of accuracy can be easely palliated with temporal filtering 
+techniques. This is shown in the template example "faceImitator.cpp".</p>
+
+<p>We are working on a inteligent imitation algorithm for applications in social robotics
+as well.</p>
+
+<p>The algorithm is robust to 2D rotations but not to 3D changes in pose. Optical flow 
+could be used for 3D tracking after face detection but it is not developed yet. This 
+would strongly improve the robustness of the algorithm.</p>
+
+<p>Please, note that this code was a research effort without commercial purposes so:</p>
+
+<ul>
+<li><p>You are highly welcome to improve it and send it back to us to make it available!! ;-)</p></li>
+<li><p>You may note that the code is a bit dirty, buggy and badly commented. Sorry for that.</p></li>
+<li><p>There are many things that could be improved such as using color information to
+improve lips boundaries detection, and or add kalman/time filtering for accuracy.</p></li>
+<li><p>It works fine in Ubuntu but can show some problems with integer arithmetics in Windows.</p></li>
+<li><p>Feel free to contact to share ideas or contribute!.</p></li>
+</ul><p>This software uses the well known and brilliant OpenCV library for image processing 
+algorithms and you will need it to be able to build it: <a href="http://opencv.org/">http://opencv.org/</a></p>
+
+<p>You can find a description of the algortihm in the paper cited below. Please quote the
+authors in any relevant work you make out of this software.</p>
+
+<p>de Carvalho Santos, V.; Romero, R.A.F.; Coca, S.R.D.-M., "Imitation of Facial Expressions for a Virtual Robotic Head," Robotics Symposium and Latin American Robotics Symposium (SBR-LARS), 2012 Brazilian , vol., no., pp.251,254, 16-19 Oct. 2012
+doi: 10.1109/SBR-LARS.2012.48
+keywords: {computer vision;feature extraction;human-robot interaction;computer vision;eye extraction;eyebrows;face detection;face tilt angle;facial expressions;mouth characteristic points;natural interaction;nostrils;real-time geometric facial features extraction;social robots;virtual robotic head;Computer architecture;Eyebrows;Face;Feature extraction;Humans;Mouth;Robots;facial expression;facial features extraction;imitation},
+URL: <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=6363351&amp;isnumber=6363255">http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=6363351&amp;isnumber=6363255</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Facex maintained by <a href="https://github.com/sdcoca">sdcoca</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
