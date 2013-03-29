@@ -9,6 +9,10 @@ facial features extraction algorithm. It was developed in Sao Paulo University (
 and in cooperation with Universidad Politecnica de Madrid (Spain) and Carnegie Mellon 
 University (USA). It covers mouth, eyes, eyebrows, nosetrils, and face tilt estimation.
 
+Watch a demo here: http://www.youtube.com/watch?v=2wYHoMu7kXo
+
+    (make it full quality and full screen or you will not see the details)
+ 
 It provides a very simple interface based on a single C/C++ class named "Face" that 
 will compute the location of the mentioned points of geomatrical interest of the face 
 the provided image. See "face.h".
