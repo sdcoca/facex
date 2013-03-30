@@ -45,17 +45,17 @@ University (USA). It covers mouth, eyes, eyebrows, nosetrils, and face tilt esti
 
 <p>It provides a very simple interface based on a single C/C++ class named "Face" that 
 will compute the location of the mentioned points of geomatrical interest of the face 
-the provided image. See "face.h".</p>
+within the provided image. See "face.h".</p>
 
 <p>If you take a look at the screeshot images in the source directory you may notice 
 how robust it is against typical sources of occlusion such as hair, glasses and 
-forehead wrinkles.</p>
+forehead wrinkles. </p>
 
-<p>Performance was totally prioriticed over precission. The extraction algorithm takes 
-from 300usec to 1.5 ms on a desktop PC. It still has to be cleaned up from some 
-unnecessary operations but shows promising results. </p>
+<p>Performance was totally prioritised over precission. The extraction algorithm takes 
+300usec - 1.5 ms on a desktop PC. It still has to be cleaned up from some unnecessary
+operations but shows promising results. </p>
 
-<p>Additionaly, the lack of accuracy can be easely palliated with temporal filtering 
+<p>Additionaly, the lack of accuracy can be easily palliated with temporal filtering 
 techniques. This is shown in the template example "faceImitator.cpp".</p>
 
 <p>We are working on a inteligent imitation algorithm for applications in social robotics
@@ -71,11 +71,13 @@ would strongly improve the robustness of the algorithm.</p>
 <li><p>You are highly welcome to improve it and send it back to us to make it available!! ;-)</p></li>
 <li><p>You may note that the code is a bit dirty, buggy and badly commented. Sorry for that.</p></li>
 <li><p>There are many things that could be improved such as using color information to
-improve lips boundaries detection, and or add kalman/time filtering for accuracy.</p></li>
-<li><p>It works fine in Ubuntu but can show some problems with integer arithmetics in Windows.</p></li>
+improve lips boundaries detection, or adding kalman/time filtering for accuracy.</p></li>
+<li><p>It works fine in Ubuntu Linux but can show some problems with integer arithmetics in 
+Windows. I don't plan to port it in the near future so that would be a nice and easy
+contribution form you!.</p></li>
 <li><p>Feel free to contact to share ideas or contribute!.</p></li>
 </ul><p>This software uses the well known and brilliant OpenCV library for image processing 
-algorithms and you will need it to be able to build it: <a href="http://opencv.org/">http://opencv.org/</a></p>
+algorithms and you will need it in order to build it: <a href="http://opencv.org/">http://opencv.org/</a></p>
 
 <p>You can find a description of the algortihm in the paper cited below. Please quote the
 authors in any relevant work you make out of this software.</p>
