@@ -15,17 +15,17 @@ Watch a demo here: http://www.youtube.com/watch?v=2wYHoMu7kXo
  
 It provides a very simple interface based on a single C/C++ class named "Face" that 
 will compute the location of the mentioned points of geomatrical interest of the face 
-the provided image. See "face.h".
+within the provided image. See "face.h".
 
 If you take a look at the screeshot images in the source directory you may notice 
 how robust it is against typical sources of occlusion such as hair, glasses and 
 forehead wrinkles. 
 
-Performance was totally prioriticed over precission. The extraction algorithm takes 
-from 300usec to 1.5 ms on a desktop PC. It still has to be cleaned up from some 
-unnecessary operations but shows promising results. 
+Performance was totally prioritised over precission. The extraction algorithm takes 
+300usec - 1.5 ms on a desktop PC. It still has to be cleaned up from some unnecessary
+operations but shows promising results. 
 
-Additionaly, the lack of accuracy can be easely palliated with temporal filtering 
+Additionaly, the lack of accuracy can be easily palliated with temporal filtering 
 techniques. This is shown in the template example "faceImitator.cpp".
 
 We are working on a inteligent imitation algorithm for applications in social robotics
@@ -44,14 +44,16 @@ Please, note that this code was a research effort without commercial purposes so
   - You may note that the code is a bit dirty, buggy and badly commented. Sorry for that.
   
   - There are many things that could be improved such as using color information to
-    improve lips boundaries detection, and or add kalman/time filtering for accuracy.
+    improve lips boundaries detection, or adding kalman/time filtering for accuracy.
   
-  - It works fine in Ubuntu but can show some problems with integer arithmetics in Windows.
+  - It works fine in Ubuntu Linux but can show some problems with integer arithmetics in 
+    Windows. I don't plan to port it in the near future so that would be a nice and easy
+    contribution form you!.
 
   - Feel free to contact to share ideas or contribute!.
   
 This software uses the well known and brilliant OpenCV library for image processing 
-algorithms and you will need it to be able to build it: http://opencv.org/
+algorithms and you will need it in order to build it: http://opencv.org/
 
 You can find a description of the algortihm in the paper cited below. Please quote the
 authors in any relevant work you make out of this software.
