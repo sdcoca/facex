@@ -19,7 +19,9 @@ within the provided image. See "face.h".
 
 If you take a look at the screeshot images in the source directory you may notice 
 how robust it is against typical sources of occlusion such as hair, glasses and 
-forehead wrinkles. 
+forehead wrinkles:
+
+https://raw.github.com/sdcoca/facex/master/face_collage.jpg
 
 Performance was totally prioritised over precission. The extraction algorithm takes 
 300usec - 1.5 ms on a desktop PC. It still has to be cleaned up from some unnecessary
